@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: url("grid.jpg");
+    background-position: center;
+    background-repeat: repeat;
+}
+
+#full{
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+}
+
+.logoimg .logo {
+    width: 6%;
+    height: auto;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-bottom: 35px;
+    padding-right: 35px;
+}
+
+.header .logoimg .logo { float: left;}
+
+
+
+.drop1 {
+    text-decoration: none;
+    color: #9FC3A1;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bold;
+    
+
+  }
+  
+  .nav { 
+      width: 100%;
+      height: auto;
+  }
+
+  .nav ul { 
+      padding-left: 600px;
+      margin-top: 90px;
+  }
+  .navdrop1 {
+    position: relative;
+    display: inline-block;
+    /* width: 23%; */
+  }
+  
+  .drop1 {
+      font-family: 아리따-돋움(TTF);
+  }
+  
+  .dropbtn1 {
+    display: none;
+    position: absolute;
+    font-size: 13px;
+    min-width: 180px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  
+  .dropbtn1 a {
+    color: #9FC3A1;
+    text-decoration: none;
+    display: block;
+  }
+
+  .a1 a {
+    
+    /* padding: 10px 25px 5px 28px; */
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-bottom: 3px;
+    padding-right: 28px;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+  
+  .a2 a {
+      padding-top: 5px;
+      padding-left: 60px;
+      padding-bottom: 3px;
+      padding-right: 50px;
+      letter-spacing: -2px;
+      text-align: center;
+  }
+
+  .a3 a {
+      padding-top: 5px;
+      padding-left: 20px;
+      padding-bottom: 3px;
+      padding-right: 50px;
+      letter-spacing: -2px;
+  }
+  .a4 a {
+      padding-top: 5px;
+      padding-left: 0px;
+      padding-bottom: 3px;
+      padding-right: 68px;
+      letter-spacing: -2px;
+  }
+  .dropbtn1 a:hover { color: #FCBF8F;}
+  
+  
+  .navdrop1:hover .dropbtn1 {
+    display: block;
+  }
+  
+  
+  .navdrop1:hover .drop1 {
+    color: #FCBF8F;
+  }
+
+  .nav ul { float: left;}
+  .nav2 ul {
+      margin-top: 90px;
+      padding-left: 100px;
+      float: left;
+      list-style-type: none;
+  }
+
+  .nav2 ul li {
+      float: left;
+  }
+
+  .nav2 ul li a {
+      text-decoration: none;
+      padding: 0px 15px;
+      letter-spacing: 3px;
+      color: #FCBF8F;
+      font-weight: bold;
+  }
+
+  .nav2 ul li:hover a { color: #9FC3A1; }
+
+
+  .header::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
