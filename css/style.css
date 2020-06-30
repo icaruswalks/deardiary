@@ -7,10 +7,8 @@ body {
     padding: 0;
 }
 
-#full{
-    width: 100%;
-    height: auto;
-}
+
+/* header */
 
 .header {
     width: 100%;
@@ -24,6 +22,7 @@ body {
     padding-left: 45px;
     padding-bottom: 35px;
     padding-right: 35px;
+    position: sticky;
 }
 
 .header .logoimg .logo { float: left;}
@@ -33,7 +32,10 @@ body {
 .drop1 {
     text-decoration: none;
     color: #9FC3A1;
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -71,7 +73,7 @@ body {
     min-width: 180px;
     text-align: center;
     z-index: 1;
-    margin-top: 35px;
+    margin-top: 20px;
   }
   
   
@@ -150,10 +152,22 @@ body {
   .nav2 ul li:hover a { color: #9FC3A1; }
 
 
-  .header::after {
+
+
+  .header {
       content: "";
       display: table;
       clear: both;
+  }
+
+  /* 첫번째 페이지 */
+
+  .firstpage {
+      box-sizing: border-box;
+      width: 100%;
+      height: 800px;
+      padding: 0;
+      margin: 0;
   }
 
   .top a {
@@ -167,36 +181,34 @@ body {
 
 .container {
     width: 80%;
-    height: auto;
+    height: 1080px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .diary1 .diary {
-    width: 40%;
+    width: 28%;
     height: auto;
-    position: relative;
-    bottom: 20px;
-    left: 100px;
-    float: left;
+    position: absolute;
+    top: 350px;
+    left: 350px;
 }
 
 .text img {
     width: 8%;
     height: auto;
-    float: left;
     position: absolute;
-    z-index: 1;
-    top: 410px;
-    left: 170px;
-}
+    top: 400px;    
+    left: 230px;
+    z-index: 1; }
+    
 
 .diary1 .tape1 {
-    width: 10%;
+    width: 6%;
     height: auto;
-    position: relative;
-    left: 160px;
-    top: 20px;
+    position: absolute;
+    left: 370px;
+    top: 325px;
     z-index: 2;
 }
 
@@ -206,18 +218,33 @@ body {
     font-family: "Noto Sans KR";
     font-size: 15px;
     letter-spacing: -1px;
-    position: relative;
-    left: 610px;
-    top: 40px;
+    position: absolute;
+    left: 780px;
+    top: 320px;
+}
+
+.text2 {
+    box-sizing: border-box;
+    width: 40%;
+    height: auto;
 }
 
 
 
+.text2 .weekly {
+    position: absolute;
+    left: 1000px;
+    top: 330px;
+    letter-spacing: -3px;
+    margin: 0;
+    padding: 0;
+    
+}
 
-.text2 p {
-    position: relative;
-    left: 200px;
-    bottom: 30px;
+.text2 .introduce {
+    position: absolute;
+    left: 1000px;
+    top: 370px;
     letter-spacing: -3px;
     margin: 0;
     padding: 0;
@@ -225,22 +252,226 @@ body {
 }
 
 .diary2 .diary22 {
-    width: 40%;
-    position: relative;
-    top: 0;
-    left: 120px;
+    width: 30%;
+    position: absolute;
+    top: 512px;
+    left: 900px;
 }
 
 .diary2 .tape2 {
     position: absolute;
     width: 5%;
-    top: 460px;
-    left: 890px;
+    top: 483px;
+    left: 870px;
+    z-index: 3;
+   
 }
 
 .diary2 .tape3 {
     position: absolute;
     width: 5%;
-    top: 830px;
-    right: 340px;
+    top: 840px;
+    left: 1400px;
+    z-index: 4;
+}
+
+/* 두번째 페이지 */
+.secondpage {
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 1080px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.category {
+    
+    width: 100%;
+    height: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30px;
+    
+}
+
+.category img {
+    max-width: 30px;
+    height: auto;
+    float: right;
+    padding-right: 50px;
+}
+
+.scrollbox {
+    box-sizing: border-box;
+    width: 90%;
+    height: 2000px;
+    border: none;
+    overflow-y: scroll;
+   
+    
+}
+.box_back {
+    box-sizing: border-box;
+    min-width: 400px;
+    min-height: 400px;
+    border: 3px dashed #9FC3A1;
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+    background-color: white;
+    
+}
+
+.box_front {
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    border: 3px dashed #9FC3A1;
+    position: absolute;
+    top: 1230px;
+    left: 140px;
+    background-color: white;
+}
+
+.box_front p {
+    line-height: 65px;
+    text-align: center;
+}
+.reviewbox {
+    box-sizing: border-box;
+    
+}
+.review1 {
+    box-sizing: border-box;
+    max-width: 700px;
+    height: auto;
+    position: absolute;
+    left: 700px;
+}
+
+.pen {
+    width: 70%;
+    height: auto;
+}
+
+.pen .penn {
+    width: 100%;
+    height: auto;
+    border: 1px solid #9FC3A1;
+}
+
+.review1 .pen {
+    float: right;
+}
+
+
+.review1 .pen .jet {
+    font-size: 22px;
+    font-family: Noto Sans KR;
+    font-weight: 500;
+    color: #9FC3A1;
+    transform: rotate(90deg);
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: -170px;
+    top: 635px;
+}
+
+.reviewbox .review1 .review_text {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+.review_text p {
+    
+    font-family: Noto Sans KR;
+    text-align: justify;
+    font-size: 18px;
+    letter-spacing: -2px;
+}
+
+.star img {
+    width: 20px;
+}
+
+.review2 {
+    box-sizing: border-box;
+    max-width: 700px;
+    height: auto;
+    position: absolute;
+    top: 1800px;
+    left: 1100px;
+    
+    
+}
+
+.maskingtape {
+    width: 70%;
+    height: auto;
+}
+
+.maskingtape .toy {
+    width: 100%;
+    height: auto;
+    border: 1px solid #9FC3A1;
+}
+
+.review2 .maskingtape {
+    float: right;
+}
+
+.review2 .maskingtape .toymask {
+    font-size: 22px;
+    font-family: Noto Sans KR;
+    font-weight: 500;
+    color: #9FC3A1;
+    transform: rotate(90deg);
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: -170px;
+    top: 552px;
+}
+
+.reviewbox .review2 .review_text2 {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+.star2 img {
+    width: 20px;
+}
+
+.review_text2 p {
+    
+    font-family: Noto Sans KR;
+    text-align: justify;
+    font-size: 18px;
+    letter-spacing: -2px;
+}
+
+.review3 {
+    box-sizing: border-box;
+    max-width: 700px;
+    height: auto;
+    position: absolute;
+    left: 910px;
+    top: 2600px;
+}
+
+.book {
+    width: 77%;
+    height: auto;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #9FC3A1;
 }
